@@ -135,7 +135,7 @@ if filtered_tasks:
         st.subheader("✏️ Edit Tugas")
         with st.form("edit_form"):
             tugas_baru = st.text_input("Edit tugas", value=st.session_state.tugas_diedit["tugas"])
-            kategori_baru = st.selectbox("Edit kategori", ["Belajar", "Kerja", "Pribadi"],
+            kategori_baru = st.selectbox("Edit kategori", ["Cathering", "Seserahan", "Souvenir", "Pemberkasan", "Publikasi"],
                                          index=["Belajar", "Kerja", "Pribadi"].index(
                                              st.session_state.tugas_diedit["kategori"]))
             prioritas_baru = st.selectbox("Edit prioritas", ["Rendah", "Sedang", "Tinggi"],
