@@ -32,7 +32,7 @@ st.title("💖 Welcome Gita & Fatih")
 # Input tugas baru
 with st.form("tugas_form"):
     new_task = st.text_input("Masukkan tugas baru")
-    kategori = st.selectbox("Pilih kategori", ["Belajar", "Kerja", "Pribadi"])
+    kategori = st.selectbox("Pilih kategori", ["Cathering", "Seserahan", "Souvenir"])
     prioritas = st.selectbox("Pilih prioritas", ["Rendah", "Sedang", "Tinggi"])
     deadline = st.date_input("Tentukan deadline (opsional)")
     submitted = st.form_submit_button("Tambah Tugas")
