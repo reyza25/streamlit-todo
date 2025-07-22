@@ -27,7 +27,7 @@ if "tugas_diedit" not in st.session_state:
     st.session_state.tugas_diedit = None
 
 
-st.title("📝 To-Do List Sederhana")
+st.title("📝 To-Do List")
 
 # Input tugas baru
 with st.form("tugas_form"):
