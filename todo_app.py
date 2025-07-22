@@ -78,7 +78,7 @@ if filtered_tasks:
         col1, col2, col3 = st.columns([0.7, 0.15, 0.15])
         ##col1, col2 = st.columns([0.85, 0.15])
         deadline_str = task['deadline'] if isinstance(task['deadline'], str) else str(task['deadline'])
-        label = f" {task.get('tugas', 'Tanpa Nama')} | Prioritas: {task.get('prioritas', 'Tidak Ditentukan')} (Deadline: {deadline_str})"
+        label = f" {task.get('kategori', 'Tanpa Nama')}:{task.get('tugas', 'Tanpa Nama')} | Prioritas: {task.get('prioritas', 'Tidak Ditentukan')} (Deadline: {deadline_str})"
 
         selesai = col1.checkbox(label, value=task["selesai"], key=f"selesai_{idx_global}")
         ##selesai = col1.checkbox(label, value=task["selesai"], key=f"selesai_{i}")
